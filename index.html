@@ -6,5 +6,5 @@
 <script src="https://unpkg.com/d3-graphviz@0.1.2/build/d3-graphviz.min.js"></script>
 <div id="graph" style="text-align: center;"></div>
 <script>
-d3.select("#graph").graphviz().renderDot(location.hash.substring(1));
+d3.select("#graph").graphviz().renderDot(decodeURIComponent(location.hash.substring(1)));
 </script>
